@@ -7,37 +7,40 @@
     <title>test</title>
   </head>
   <body>
-    <section class="header">
+    <header class="header">
       <div class="container">
-        <p class="header__logo">LoremIpsum.Net</p>
-        <div class="header__nav">
-          <p class="header__tab">Бизнес</p>
-          <p class="header__tab">О нас</p>
-          <p class="header__tab">Цены</p>
-          <p class="header__tab">Оформить заказ</p>
+        <p class="header__logo">
+          LoremIpsum.<span class="colortext">Net</span>
+        </p>
+        <div class="header__burger">
+          <span></span>
+          <div class="header__nav">
+            <p class="header__tab">Бизнес</p>
+            <p class="header__tab">О нас</p>
+            <p class="header__tab">Цены</p>
+            <p class="header__tab">Оформить заказ</p>
+          </div>
         </div>
       </div>
-    </section>
+    </header>
 
     <section class="welcome">
       <div class="container">
         <div class="welcome__wrapper">
           <p class="welcome__title">
-            <span class="colortext">Lorem ipsum</span> dolor sit amet
-            consectetur <span class="colortext">adipiscing</span>
+            <span class="colortext">Lorem ipsum</span> dolor sit ametconsectetur
+            <span class="colortext">adipiscing</span>
           </p>
-          <p class="welcome__subtitle">
-            At vero eos et accusamus et iusto odio dignissimos ducimus!
-          </p>
-          <ul class="welcome__list">
-            <li class="welcome__item">Totam rem aperiam eaque ipsa</li>
-            <li class="welcome__item">
-              Sit voluptatem accusantium doloremque laudantium
-            </li>
-            <li class="welcome__item">
-              Sed ut perspiciatis, unde omnis iste natus error
-            </li>
-          </ul>
+          <div class="welcome__list-wrapper">
+            <p class="welcome__subtitle">
+              At vero eos et accusamus et iusto odio dignissimos ducimus!
+            </p>
+            <ul class="welcome__list">
+              <li class="welcome__item">Totam rem aperiam eaque ipsa</li>
+              <li class="welcome__item">Sit voluptatem accusantium doloremque laudantium</li>
+              <li class="welcome__item">Sed ut perspiciatis, unde omnis iste natus error</li>
+            </ul>
+          </div>
           <div class="welcome__buttons">
             <div class="welcome__button">заказать</div>
             <div class="welcome__button">подробнее</div>
@@ -49,7 +52,7 @@
     <section class="order">
       <div class="container">
         <div class="order__wrapper">
-          <p class="order__title">Оформление Заказа</p>
+          <p class="order__title">Оформление <span class="colortext">Заказа</span></p>
           <p class="order__subtitle">
             Перед заполнением формы ознакомьтесь с нашей схемой работы!
           </p>
@@ -100,36 +103,33 @@
 
           <form action="#" class="order__form" id="order">
             <div class="order__select">
-              <div class="order__menu">
-                <p class="order__item"></p>
-                <p class="order__item"></p>
-                <p class="order__item"></p>
-                <p class="order__item"></p>
-                <p class="order__item"></p>
-                <p class="order__item"></p>
+              <p class="order__placeholder">Выберите тип системы</p>
+              <div class="order__menu-wrapper">
+                <ul class="order__menu">
+                  <li class="order__item">Sed ut perspiciatis</li>
+                  <li class="order__item">Nemo enim ipsam</li>
+                  <li class="order__item">Temporibus autem</li>
+                  <li class="order__item">Itaque earum rerum</li>
+                  <li class="order__item">Ipsum dolor sit</li>
+                  <li class="order__item">Consectetur adipisicing</li>
+                </ul>
               </div>
             </div>
-            <select name="" form="order" id="" class="order__selectt">
-              <option value="" class="order__option"></option>
-              <option value="" class="order__option"></option>
-              <option value="" class="order__option"></option>
-              <option value="" class="order__option"></option>
-              <option value="" class="order__option"></option>
-              <option value="" class="order__option"></option>
-            </select>
-            <input type="email" class="order__input" />
-            <input type="text" class="order__input" />
+            <input name="email" placeholder="Ваш e-mail" type="email" class="order__input" />
+            <input name="name" placeholder="Ваше имя" type="text" class="order__input" />
             <div class="order__range">
-              <p class="order__rangetitle">
-                Sed ut perspiciatis, unde omnis iste natus
-                <span class="order__value"></span>
-              </p>
+              <div class="order__value">
+                <p class="order__rangetitle">
+                  Sed ut perspiciatis, unde omnis iste natus
+                </p>
+                <span class="order__counter"></span>
+              </div>
               <input type="range" class="order__rangebar" />
             </div>
             <div class="order__buttonfile">
               <img src="/img/addfile__icon.svg" alt="#" class="order__icon" />
               <label for="files" class="order__file">Прикрепить файл</label>
-              <input id="files" style="visibility: hidden" type="file" />
+              <input id="files" style="display: none" type="file" />
             </div>
             <input type="submit" class="order__submit" />
           </form>
@@ -137,29 +137,39 @@
       </div>
     </section>
 
-    <section class="footer">
+    <footer class="footer">
       <div class="container">
-        <p class="footer__copyright">
-          © 2018 «LoremIpsum.net» Все права защищены.
-        </p>
+        <div class="footer__wrapper">
+          <p class="footer__copyright">© 2018 «LOREMIPSUM.NET» Все права защищены.</p>
         <div class="footer__separator"></div>
         <div class="footer__payment">
-          <img src="/img/qiwi__icon.svg" alt="#" class="footer__icon" />
-          <p class="footer__paymenttitle">Qiwi wallet</p>
-          <img src="/img/yandex__icon.svg" alt="#" class="footer__icon" />
-          <p class="footer__paymenttitle">Yandex Money</p>
-          <img src="/img/webmoney__icon.svg" alt="#" class="footer__icon" />
-          <p class="footer__paymenttitle">Web Money</p>
+          <div class="footer__item">
+            <img src="/img/qiwi__icon.svg" alt="#" class="footer__icon" />
+            <p class="footer__paymenttitle">Qiwi wallet</p>
+          </div>
+          <div class="footer__item">
+            <img src="/img/yandex__icon.svg" alt="#" class="footer__icon" />
+            <p class="footer__paymenttitle">Yandex Money</p>
+          </div>
+          <div class="footer__item">
+            <img src="/img/webmoney__icon.svg" alt="#" class="footer__icon" />
+            <p class="footer__paymenttitle">Web Money</p>
+          </div>
         </div>
         <div class="footer__separator"></div>
         <div class="footer__contacts">
-          <img src="/img/mail__icon.svg" alt="#" class="footer__icon" />
-          <p class="footer__link">info@ipsum228.com</p>
-          <img src="/img/vk__icon.svg" alt="#" class="footer__icon" />
-          <p class="footer__link">Мы вконтакте</p>
+          <a href="mailto:info@ipsum228.com" target="_blank" class="footer__item">
+            <img src="/img/mail__icon.svg" alt="#" class="footer__icon" />
+            <p class="footer__link">info@ipsum228.com</p>
+          </a>
+          <a href="https://www.vk.com" target="_blank" class="footer__item">
+            <img src="/img/vk__icon.svg" alt="#" class="footer__icon" />
+            <p class="footer__link">Мы вконтакте</p>
+          </a>
+        </div>
         </div>
       </div>
-    </section>
+    </footer>
     <script src="index.js"></script>
   </body>
 </html>

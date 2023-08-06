@@ -1,0 +1,206 @@
+@media screen and (max-width: 1901px) {
+    .order__submit {
+        margin: 0;
+    }
+    
+    .order__form {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1812px) {
+    .order__separator {
+        display: none;
+    }
+
+    .order__cards {
+        justify-content: center;
+        gap: 6.5rem;
+    }
+}
+
+@media screen and (max-width: 1509px) {
+    .container {
+        padding: 0 10.5rem;
+    }
+}
+
+@media screen and (max-width: 1328px) {
+    .footer__payment {
+        gap: 0.37rem;
+    }
+
+    .footer__contacts {
+        gap: 0.37rem;
+    }
+}
+
+@media screen and (max-width: 1095px) {
+    .welcome__title {
+        font-size: 2.5rem;
+    }
+
+    .welcome__list-wrapper {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 1092px) {
+    .order__range {
+        width: 22.7rem;
+    }
+
+    .order__value {
+        display: block;
+        text-align: center;
+    }
+
+    .footer__contacts {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .footer__payment {
+        flex-direction: column;
+    }
+
+    .header__nav {
+        gap: 2.25rem;
+    }
+}
+
+@media screen and (max-width: 971px) {
+    .container {
+        padding: 0 3.5rem;
+    }
+
+    .footer__copyright {
+        max-width: 11rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header__burger {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        height: 1.1rem;
+        width: 2rem;
+    
+        span, span::before, span::after {
+            display: block;
+            position: absolute;
+            height: 3px;
+            width: 100%;
+            background-color: #FFF;
+            border-radius: 1rem;
+            transition: transform .3s .3s ease;
+        }
+
+        span::before {
+            content: '';
+            top: 0.5rem;
+            transition: top .3s .3s ease, transform .3s ease;
+        }
+
+        span::after {
+            content: '';
+            top: 1rem;
+            transition: top .3s .3s ease, transform .3s ease ;
+        }
+
+        &.header__burger--active {
+            span::before {
+                content: '';
+                top: 0;
+                transform: rotate(-90deg);
+                transition: top .3s ease, transform .3s .3s ease ;
+            }
+
+            span {
+                transform: rotate(45deg);
+                top: 50%;
+                transition: top .3s ease, transform .3s .3s ease ;
+            }
+
+            span::after {
+                content: '';
+                top: 0;
+                transform: rotate(-90deg);
+                opacity: 0;
+                transition: top .3s ease, transform .3s .3s ease ;
+            }
+
+            .header__nav {
+                opacity: 1;
+            }
+        }
+    }
+    
+    .header__nav {
+        opacity: 0;
+        margin: 0;
+        flex-direction: column;
+        position: absolute;
+        text-align: center;
+        z-index: -1;
+        right: 0;
+        padding: 2rem;
+        background-color: rgba(16, 16, 29, 0.9);
+        transition: opacity .3s ease;
+    }
+
+    .welcome__title {
+        font-size: 2rem;
+    }
+
+    .welcome__list-wrapper {
+        font-size: 0.75rem;
+    }
+
+    .welcome__button {
+        padding: 0.54rem 0.42rem;
+        font-size: 0.75rem;
+        width: 9.4375rem;
+    }
+
+    .order__img {
+        width: 4rem;
+    }
+
+    .order__description {
+        font-size: 0.75rem;
+        max-width: 8rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+        .container {
+            padding: 0 0.15rem;
+        }
+
+        .order__form {
+            max-width: 15.7rem;
+        }
+
+        .order__select, .order__input, .order__rangetitle, .order__buttonfile, .order__submit {
+            font-size: 0.75rem;
+        }
+
+        .footer__payment, .footer__separator {
+            display: none;
+        }
+
+        .footer {
+            font-size: 0.65rem;
+        }
+
+        .welcome__buttons {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .welcome__title {
+            font-size: 1.75rem;
+        }
+    }
