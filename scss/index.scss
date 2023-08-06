@@ -1,31 +1,31 @@
 @font-face {
   font-weight: 800;
   font-family: "Raleway";
-  src: url("./fonts/Raleway-ExtraBold.ttf");
+  src: url("../fonts/Raleway-ExtraBold.ttf");
 }
 
 @font-face {
   font-weight: 400;
   font-family: "Lato";
-  src: url("./fonts/Lato-Regular.ttf");
+  src: url("../fonts/Lato-Regular.ttf");
 }
 
 @font-face {
   font-weight: 600;
   font-family: "Lato";
-  src: url("./fonts/Lato-SemiBold.ttf");
+  src: url("../fonts/Lato-SemiBold.ttf");
 }
 
 @font-face {
   font-weight: 700;
   font-family: "Lato";
-  src: url("./fonts/Lato-Bold.ttf");
+  src: url("../fonts/Lato-Bold.ttf");
 }
 
 @font-face {
   font-weight: 800;
   font-family: "Lato";
-  src: url("./fonts/Lato-ExtraBold.ttf");
+  src: url("../fonts/Lato-ExtraBold.ttf");
 }
 
 * {
@@ -84,7 +84,7 @@
 
 .welcome {
   padding: 12.69rem 0;
-  background: url("./img/first__bg.png") center no-repeat;
+  background: url("../img/first__bg.png") center no-repeat;
 
   &__wrapper {
     display: flex;
@@ -163,7 +163,7 @@
 
 .order {
   padding: 7.56rem 0 9.45rem;
-  background: url(./img/background.png), #272733 center top no-repeat;
+  background: url(../img/background.png), #272733 center top no-repeat;
 
   &__wrapper {
     display: flex;
@@ -246,7 +246,7 @@
       border-radius: 0.1875rem 0.1875rem 0rem 0rem;
 
       .order__placeholder::after {
-        content: url("./img/arrow__white.svg");
+        content: url("../img/arrow__white.svg");
       }
 
       .order__menu-wrapper {
@@ -266,7 +266,7 @@
     align-items: center;
 
     &::after {
-      content: url("./img/arrow__icon.svg");
+      content: url("../img/arrow__icon.svg");
       width: 1.25rem;
       height: 1rem;
       margin-left: auto;

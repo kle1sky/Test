@@ -74,7 +74,7 @@
 
 .welcome {
   padding: 12.69rem 0;
-  background: url("./img/first__bg.png") center no-repeat;
+  background: url("../img/first__bg.png") center no-repeat;
 }
 .welcome__wrapper {
   display: flex;
@@ -141,7 +141,7 @@
 
 .order {
   padding: 7.56rem 0 9.45rem;
-  background: url(./img/background.png), #272733 center top no-repeat;
+  background: url(../img/background.png), #272733 center top no-repeat;
 }
 .order__wrapper {
   display: flex;
@@ -216,7 +216,7 @@
   border-radius: 0.1875rem 0.1875rem 0rem 0rem;
 }
 .order__select.order__select--open .order__placeholder::after {
-  content: url("./img/arrow__white.svg");
+  content: url("../img/arrow__white.svg");
 }
 .order__select.order__select--open .order__menu-wrapper {
   display: block;
@@ -231,7 +231,7 @@
   align-items: center;
 }
 .order__placeholder::after {
-  content: url("./img/arrow__icon.svg");
+  content: url("../img/arrow__icon.svg");
   width: 1.25rem;
   height: 1rem;
   margin-left: auto;
