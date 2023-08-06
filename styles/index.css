@@ -562,7 +562,16 @@
 }
 @media screen and (max-width: 500px) {
   .container {
-    padding: 0 0.15rem;
+    padding: 0 0.7rem;
+  }
+  .order__title {
+    font-size: 1.75rem;
+  }
+  .order__subtitle {
+    font-size: 0.75rem;
+  }
+  .order__cards {
+    gap: 5rem;
   }
   .order__form {
     max-width: 15.7rem;
@@ -582,5 +591,16 @@
   }
   .welcome__title {
     font-size: 1.75rem;
+  }
+}
+@media screen and (max-width: 418px) {
+  .order__cards {
+    gap: 6.5rem;
+  }
+  .welcome__title {
+    font-size: 1.5rem;
+  }
+  .order__title {
+    text-align: center;
   }
 }
