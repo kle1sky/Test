@@ -576,7 +576,7 @@
   .order__form {
     max-width: 15.7rem;
   }
-  .order__select, .order__input, .order__rangetitle, .order__buttonfile, .order__submit {
+  .order__item, .order__select, .order__input, .order__rangetitle, .order__buttonfile, .order__submit {
     font-size: 0.75rem;
   }
   .footer__payment, .footer__separator {
